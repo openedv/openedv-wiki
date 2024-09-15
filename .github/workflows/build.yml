@@ -1,0 +1,44 @@
+name: "Auto-build and publish to branch"
+
+on:
+  push:
+    branches:
+      - main
+  repository_dispatch:
+    types: [build]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          submodules: 'recursive'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      
+      - name: Checkout submodules to main branch
+        run: |
+          git submodule foreach 'git checkout main'
+          git submodule foreach 'git pull'
+        
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build website
+        run: yarn build
+
+      - name: Publish to branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: release
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'

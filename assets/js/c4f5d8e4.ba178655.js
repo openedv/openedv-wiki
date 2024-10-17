@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkopenedv_wiki=self.webpackChunkopenedv_wiki||[]).push([[2634],{192:(e,i,n)=>{n.r(i),n.d(i,{default:()=>k});var d=n(6347),s=n(4848);function k(){return(0,s.jsx)(d.rd,{to:"/openedv_wiki/release/docs/homepage/index.html"})}}}]);

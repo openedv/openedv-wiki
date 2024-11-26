@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">UART实验 | 正点原子在线文档</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="http://www.openedv.com/openedv_wiki/release/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="http://www.openedv.com/openedv_wiki/release/img/social-card.jpg"><meta data-rh="true" property="og:url" content="http://www.openedv.com/openedv_wiki/release/docs/Boards/DNK230D/example-base/uart"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="UART实验 | 正点原子在线文档"><meta data-rh="true" name="description" content="前言"><meta data-rh="true" property="og:description" content="前言"><link data-rh="true" rel="icon" href="/openedv_wiki/release/img/favicon.ico"><link data-rh="true" rel="canonical" href="http://www.openedv.com/openedv_wiki/release/docs/Boards/DNK230D/example-base/uart"><link data-rh="true" rel="alternate" href="http://www.openedv.com/openedv_wiki/release/docs/Boards/DNK230D/example-base/uart" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="http://www.openedv.com/openedv_wiki/release/docs/Boards/DNK230D/example-base/uart" hreflang="x-default"><link rel="stylesheet" href="/openedv_wiki/release/assets/css/styles.ccb0c68d.css">
-<script src="/openedv_wiki/release/assets/js/runtime~main.dba3d3fe.js" defer="defer"></script>
+<script src="/openedv_wiki/release/assets/js/runtime~main.3ac76059.js" defer="defer"></script>
 <script src="/openedv_wiki/release/assets/js/main.3c66ede3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -68,11 +68,11 @@
 <li>
 <p>扩展串口接口2</p>
 <p>​	UART2_TXD - IO44</p>
+<p>​	UART2_RXD - IO45</p>
 </li>
 </ol>
-<p>​    	   UART2_RXD - IO45</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="原理图">原理图<a href="#原理图" class="hash-link" aria-label="原理图的直接链接" title="原理图的直接链接">​</a></h3>
-<p>本章实验内容，需要使用到DNK230D板载的扩展串口接口1和扩展串口接口2，正点原子DNK230D开发板上的扩展串口接口连接原理图，如下图所示：</p>
+<p>本章实验内容，需要使用到K230D BOX板载的扩展串口接口1和扩展串口接口2，正点原子K230D BOX开发板上的扩展串口接口连接原理图，如下图所示：</p>
 <p><img decoding="async" loading="lazy" alt="01" src="/openedv_wiki/release/assets/images/07-15a506ee2b6a02fd9b2912681917c76a.png" width="617" height="425" class="img_ev3q"></p>
 <p>由于需要让这两个串口扩展接口相互通信，因此需要使用杜邦线或其他线材从物理上连接这这两个接口，连接时需要注意串口线路的连接需要将TXD信号和RXD信号交叉连接。</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="实验代码">实验代码<a href="#实验代码" class="hash-link" aria-label="实验代码的直接链接" title="实验代码的直接链接">​</a></h2>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">固件烧录 | 正点原子在线文档</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="http://www.openedv.com/openedv_wiki/release/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="http://www.openedv.com/openedv_wiki/release/img/social-card.jpg"><meta data-rh="true" property="og:url" content="http://www.openedv.com/openedv_wiki/release/docs/Boards/DNK230D/start-guide/firmware-flash"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="固件烧录 | 正点原子在线文档"><meta data-rh="true" name="description" content="前言"><meta data-rh="true" property="og:description" content="前言"><link data-rh="true" rel="icon" href="/openedv_wiki/release/img/favicon.ico"><link data-rh="true" rel="canonical" href="http://www.openedv.com/openedv_wiki/release/docs/Boards/DNK230D/start-guide/firmware-flash"><link data-rh="true" rel="alternate" href="http://www.openedv.com/openedv_wiki/release/docs/Boards/DNK230D/start-guide/firmware-flash" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="http://www.openedv.com/openedv_wiki/release/docs/Boards/DNK230D/start-guide/firmware-flash" hreflang="x-default"><link rel="stylesheet" href="/openedv_wiki/release/assets/css/styles.ccb0c68d.css">
-<script src="/openedv_wiki/release/assets/js/runtime~main.e0643615.js" defer="defer"></script>
+<script src="/openedv_wiki/release/assets/js/runtime~main.f081877c.js" defer="defer"></script>
 <script src="/openedv_wiki/release/assets/js/main.fc9853a8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -32,7 +32,7 @@
 <blockquote>
 <p>对K230进行固件烧录前，需先设置其进入BootROM模式，K230D BOX进入BootROM模式的方式如下</p>
 <p><strong>确保设备没有插入TF卡 --&gt; 设备上电 --&gt; 按住KEY2不放 --&gt; 单击复位按键 --&gt; 松开KEY2</strong></p>
-<p>若K230D BOX的UART0输出”<strong>boot failed with exit code 19</strong>“，则说明K230D BOX已经成功进入BootROM模式，否则请重试上述步骤。</p>
+<p>若K230D BOX的UART0输出“<strong>boot failed with exit code 19</strong>”，则说明K230D BOX已经成功进入BootROM模式，否则请重试上述步骤。</p>
 <p>若需要将固件烧录至TF卡中，则在进入BootROM模式后，在将TF卡插入K230D BOX。</p>
 <blockquote>
 <p>K230D BOX的UART0输出可通过板载的CH342，并借助相应的上位机软件进行观察。</p>
@@ -50,7 +50,7 @@
 </blockquote>
 <p><strong>选择错误的固件可能导致设备运行异常，甚至可能导致不可逆的硬件损坏。</strong></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-选择目标介质">3. 选择目标介质<a href="#3-选择目标 介质" class="hash-link" aria-label="3. 选择目标介质的直接链接" title="3. 选择目标介质的直接链接">​</a></h3>
-<p>在”目标介质“下拉列表中选择对应的目标介质。</p>
+<p>在“目标介质”下拉列表中选择对应的目标介质。</p>
 <blockquote>
 <table><thead><tr><th>目标介质</th><th>说明</th></tr></thead><tbody><tr><td>EMMC</td><td>K230的MMC0连接的设备，对应K230D BOX板载的<strong>SD NAND</strong></td></tr><tr><td>SD Card</td><td>K230的MMC1连接的设备，对应K230D BOX外置的<strong>TF卡</strong></td></tr><tr><td>其他</td><td>K230D BOX未使用</td></tr></tbody></table>
 </blockquote>
@@ -58,7 +58,7 @@
 <blockquote>
 <p><strong>固件烧录会损坏目标介质中的数据，如有需要，请在开始烧录前，做好目标介质中数据的备份工作。</strong></p>
 </blockquote>
-<p>配置好”镜像文件“和”目标介质“后，其余的配置项保持默认，点击”开始“按钮后，即可开始对K230D BOX进行固件烧录。</p>
+<p>配置好“镜像文件”和“目标介质”后，其余的配置项保持默认，点击“开始”按钮后，即可开始对K230D BOX进行固件烧录。</p>
 <p>固件烧录时，软件底部的信息框会显示固件烧录进度</p>
 <p><img decoding="async" loading="lazy" alt="k230 burning tool flashing" src="/openedv_wiki/release/assets/images/k230-burning-tool-flashing-eb0570f540615360c7ae27f40a4def0b.png" width="958" height="538" class="img_ev3q"></p>
 <p>固件烧录成功后，软件底部的信息框会显示固件烧录结果</p>

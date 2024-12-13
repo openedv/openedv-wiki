@@ -3,8 +3,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: '正点原子在线文档',
   favicon: 'img/favicon.ico',
-  url: 'http://www.openedv.com',
-  baseUrl: '/openedv_wiki/release/',
+  url: 'https://wiki.alientek.com',
+  baseUrl: '/',
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],

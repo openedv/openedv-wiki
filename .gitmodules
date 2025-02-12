@@ -1,3 +1,6 @@
 [submodule "docs/Boards/01_DNK230D"]
 	path = docs/Boards/01_DNK230D
 	url = https://github.com/openedv/openedv-wiki-boards-dnk230d.git
+[submodule "docs/Boards/02_IMX6U"]
+	path = docs/Boards/02_IMX6U
+	url = https://github.com/openedv/openedv-wiki-boards-IMX6U.git

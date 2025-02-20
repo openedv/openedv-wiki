@@ -1,3 +1,6 @@
+@import url('../../docs/Boards/01_DNK230D/styles/custom.css');
+@import url('../../docs/Boards/02_IMX6U/styles/custom.css');
+
 :root {
   --ifm-color-primary: #4d8eef;
   --ifm-color-primary-dark: #307cec;

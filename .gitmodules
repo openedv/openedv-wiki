@@ -1,0 +1,27 @@
+[submodule "docs/Boards/Kendryte/DNK230D"]
+	path = docs/Boards/Kendryte/DNK230D
+	url = https://github.com/openedv/openedv-wiki-boards-dnk230d.git
+[submodule "docs/Boards/Linux/IMX6U"]
+	path = docs/Boards/Linux/IMX6U
+	url = https://github.com/openedv/openedv-wiki-boards-IMX6U.git
+[submodule "docs/Boards/Linux/DL2K0300B"]
+	path = docs/Boards/Linux/DL2K0300B
+	url = https://github.com/openedv/openedv-wiki-boards-dl2k0300b.git
+[submodule "docs/Boards/Linux/STM32MP157"]
+	path = docs/Boards/Linux/STM32MP157
+	url = https://github.com/openedv/openedv-wiki-boards-mp157.git
+[submodule "docs/Boards/Linux/CLRV1126F"]
+	path = docs/Boards/Linux/CLRV1126F
+	url = https://github.com/openedv/openedv-wiki-boards-rv1126.git
+[submodule "docs/Boards/Linux/CLRK3568F"]
+	path = docs/Boards/Linux/CLRK3568F
+	url = https://github.com/openedv/openedv-wiki-boards-rk3568.git
+[submodule "docs/Boards/Linux/CLRK3588B"]
+	path = docs/Boards/Linux/CLRK3588B
+	url = https://github.com/openedv/openedv-wiki-boards-rk3588.git
+[submodule "docs/Boards/Linux/STM32MP135"]
+	path = docs/Boards/Linux/STM32MP135
+	url = https://github.com/openedv/openedv-wiki-boards-mp135.git
+[submodule "docs/Boards/Linux/CLIMX93B"]
+	path = docs/Boards/Linux/CLIMX93B
+	url = https://github.com/openedv/openedv-wiki-boards-imx93.git

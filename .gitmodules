@@ -4,3 +4,24 @@
 [submodule "docs/Boards/02_IMX6U"]
 	path = docs/Boards/02_IMX6U
 	url = https://github.com/openedv/openedv-wiki-boards-IMX6U.git
+[submodule "docs/Boards/03_DL2K0300B"]
+	path = docs/Boards/03_DL2K0300B
+	url = https://github.com/openedv/openedv-wiki-boards-dl2k0300b.git
+[submodule "docs/Boards/04_STM32MP157"]
+	path = docs/Boards/04_STM32MP157
+	url = https://github.com/openedv/openedv-wiki-boards-mp157.git
+[submodule "docs/Boards/05_CLRV1126F"]
+	path = docs/Boards/05_CLRV1126F
+	url = https://github.com/openedv/openedv-wiki-boards-rv1126.git
+[submodule "docs/Boards/06_CLRK3568F"]
+	path = docs/Boards/06_CLRK3568F
+	url = https://github.com/openedv/openedv-wiki-boards-rk3568.git
+[submodule "docs/Boards/07_CLRK3588B"]
+	path = docs/Boards/07_CLRK3588B
+	url = https://github.com/openedv/openedv-wiki-boards-rk3588.git
+[submodule "docs/Boards/08_STM32MP135"]
+	path = docs/Boards/08_STM32MP135
+	url = https://github.com/openedv/openedv-wiki-boards-mp135.git
+[submodule "docs/Boards/09_CLIMX93B"]
+	path = docs/Boards/09_CLIMX93B
+	url = https://github.com/openedv/openedv-wiki-boards-imx93.git

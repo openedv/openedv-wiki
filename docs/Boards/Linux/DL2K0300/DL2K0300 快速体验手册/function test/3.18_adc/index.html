@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">3.18 ADC测试 | 正点原子在线文档</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://wiki.alientek.com/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://wiki.alientek.com/img/social-card.jpg"><meta data-rh="true" property="og:url" content="https://wiki.alientek.com/docs/Boards/Linux/DL2K0300/DL2K0300 快速体验手册/function test/3.18_adc"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="3.18 ADC测试 | 正点原子在线文档"><meta data-rh="true" name="description" content="&amp;emsp;&amp;emsp;注意：ADC的采集电压绝对值最大是1.8V，请不要超过 1.8V，否则可能对芯片造成损坏。ATK-DL2K0300B底板上VR处留有一路ADC方便用户测试。底板原理图如下。"><meta data-rh="true" property="og:description" content="&amp;emsp;&amp;emsp;注意：ADC的采集电压绝对值最大是1.8V，请不要超过 1.8V，否则可能对芯片造成损坏。ATK-DL2K0300B底板上VR处留有一路ADC方便用户测试。底板原理图如下。"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://wiki.alientek.com/docs/Boards/Linux/DL2K0300/DL2K0300 快速体验手册/function test/3.18_adc"><link data-rh="true" rel="alternate" href="https://wiki.alientek.com/docs/Boards/Linux/DL2K0300/DL2K0300 快速体验手册/function test/3.18_adc" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://wiki.alientek.com/docs/Boards/Linux/DL2K0300/DL2K0300 快速体验手册/function test/3.18_adc" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.ef2a7161.css">
-<script src="/assets/js/runtime~main.20a80c15.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.af1fed79.js" defer="defer"></script>
 <script src="/assets/js/main.919f9bca.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -13,7 +13,7 @@
 <center><p><img decoding="async" loading="lazy" src="/assets/images/3.18.1-1f49ba516b1fed95b9e647bf431660a5.png" width="351" height="226" class="img_ev3q"></p></center>
 <p>  下图为ATK-DL2K0300B开发板的ADC位置。</p>
 <center><p><img decoding="async" loading="lazy" src="/assets/images/3.18.2-07422162ef3a5c7bf46223f619dabe5f.png" width="320" height="117" class="img_ev3q"></p></center>
-<p>ADC的主要特性：
+<p>ADC的主要特性：<br>
   龙芯2K0300B支持ADC功能，集成一路12bit 8通道的ADC。</p>
 <p>  在Linux系统中，ADC采样属于IIO子系统下，可以通过sysfs提供的接口来访问ADC控制器，使用的是12位精度。</p>
 <p>  标准的 IIO 设备文件目录，我们只关心两个文件：</p>

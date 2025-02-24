@@ -4,3 +4,6 @@
 [submodule "docs/Boards/Linux/IMX6U"]
 	path = docs/Boards/Linux/IMX6U
 	url = https://github.com/openedv/openedv-wiki-boards-IMX6U.git
+[submodule "docs/Boards/Linux/DL2K0300"]
+	path = docs/Boards/Linux/DL2K0300
+	url = https://github.com/openedv/openedv-wiki-boards-dl2k0300b.git

@@ -1,6 +1,7 @@
 @import url('../../docs/Boards/Kendryte/DNK230D/styles/custom.css');
 @import url('../../docs/Boards/Linux/IMX6U/styles/custom.css');
 @import url('../../docs/Boards/Linux/DL2K0300/styles/custom.css');
+@import url('../../docs/Boards/Minimum/DNRP2350AM/styles/custom.css');
 
 :root {
   --ifm-color-primary: #4d8eef;

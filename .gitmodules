@@ -10,3 +10,12 @@
 [submodule "docs/Boards/Minimum/DNRP2350AM"]
 	path = docs/Boards/Minimum/DNRP2350AM
 	url = https://github.com/openedv/openedv-wiki-boards-dnrp2350am.git
+[submodule "docs/Boards/Linux/DLIMX93"]
+	path = docs/Boards/Linux/DLIMX93
+	url = https://github.com/openedv/openedv-wiki-boards-imx93.git
+[submodule "docs/Boards/Linux/CLRK3568F"]
+	path = docs/Boards/Linux/CLRK3568F
+	url = https://github.com/openedv/openedv-wiki-boards-rk3568.git
+[submodule "docs/Boards/Linux/DLRK3588"]
+	path = docs/Boards/Linux/DLRK3588
+	url = https://github.com/openedv/openedv-wiki-boards-rk3588.git

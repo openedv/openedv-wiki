@@ -1,7 +1,12 @@
 @import url('../../docs/Boards/Kendryte/DNK230D/styles/custom.css');
+
+@import url('../../docs/Boards/Minimum/DNRP2350AM/styles/custom.css');
+
 @import url('../../docs/Boards/Linux/IMX6U/styles/custom.css');
 @import url('../../docs/Boards/Linux/DL2K0300/styles/custom.css');
-@import url('../../docs/Boards/Minimum/DNRP2350AM/styles/custom.css');
+@import url('../../docs/Boards/Linux/DLIMX93/styles/custom.css');
+@import url('../../docs/Boards/Linux/CLRK3568F/styles/custom.css');
+@import url('../../docs/Boards/Linux/DLRK3588/styles/custom.css');
 
 :root {
   --ifm-color-primary: #4d8eef;

@@ -7,6 +7,8 @@
 @import url('../../docs/Boards/Linux/DLIMX93/styles/custom.css');
 @import url('../../docs/Boards/Linux/CLRK3568F/styles/custom.css');
 @import url('../../docs/Boards/Linux/DLRK3588/styles/custom.css');
+@import url('../../docs/Boards/Linux/STM32MP157/styles/custom.css');
+@import url('../../docs/Boards/Linux/DLMP135/styles/custom.css');
 
 :root {
   --ifm-color-primary: #4d8eef;

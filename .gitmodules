@@ -19,3 +19,9 @@
 [submodule "docs/Boards/Linux/DLRK3588"]
 	path = docs/Boards/Linux/DLRK3588
 	url = https://github.com/openedv/openedv-wiki-boards-rk3588.git
+[submodule "docs/Boards/Linux/STM32MP157"]
+	path = docs/Boards/Linux/STM32MP157
+	url = https://github.com/openedv/openedv-wiki-boards-mp157.git
+[submodule "docs/Boards/Linux/DLMP135"]
+	path = docs/Boards/Linux/DLMP135
+	url = https://github.com/openedv/openedv-wiki-boards-mp135.git

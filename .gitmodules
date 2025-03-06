@@ -25,3 +25,6 @@
 [submodule "docs/Boards/Linux/DLMP135"]
 	path = docs/Boards/Linux/DLMP135
 	url = https://github.com/openedv/openedv-wiki-boards-mp135.git
+[submodule "docs/Boards/Linux/DLAM62x"]
+	path = docs/Boards/Linux/DLAM62x
+	url = https://github.com/openedv/openedv-wiki-boards-dlam62x.git

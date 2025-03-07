@@ -11,6 +11,8 @@
 @import url('../../docs/Boards/Linux/DLMP135/styles/custom.css');
 @import url('../../docs/Boards/Linux/DLAM62x/styles/custom.css');
 
+@import url('../../docs/CardComputer/AtomPi-CA1/styles/custom.css');
+
 :root {
   --ifm-color-primary: #4d8eef;
   --ifm-color-primary-dark: #307cec;

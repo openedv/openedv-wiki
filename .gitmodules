@@ -28,3 +28,6 @@
 [submodule "docs/Boards/Linux/DLAM62x"]
 	path = docs/Boards/Linux/DLAM62x
 	url = https://github.com/openedv/openedv-wiki-boards-dlam62x.git
+[submodule "docs/CardComputer/AtomPi-CA1"]
+	path = docs/CardComputer/AtomPi-CA1
+	url = https://github.com/openedv/openedv-wiki-cardcomputer-atompi-ca1.git

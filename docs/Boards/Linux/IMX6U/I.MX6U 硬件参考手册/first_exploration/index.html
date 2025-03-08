@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">1.1 正点原子I.MX6U-ALPHA开发板资源初探 | 正点原子在线文档</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://wiki.alientek.com/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://wiki.alientek.com/img/social-card.jpg"><meta data-rh="true" property="og:url" content="https://wiki.alientek.com/docs/Boards/Linux/IMX6U/I.MX6U 硬件参考手册/first_exploration"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="1.1 正点原子I.MX6U-ALPHA开发板资源初探 | 正点原子在线文档"><meta data-rh="true" name="description" content="&amp;emsp;&amp;emsp;正点原子目前已经拥有多款STM32、I.MXRT以及FPGA开发板，这些开发板常年稳居淘宝销量冠军，累计出货超过10W套。这款ALPHA开发板，是正点原子推出的第一款Linux开发板，采用底板+核心板的形式。"><meta data-rh="true" property="og:description" content="&amp;emsp;&amp;emsp;正点原子目前已经拥有多款STM32、I.MXRT以及FPGA开发板，这些开发板常年稳居淘宝销量冠军，累计出货超过10W套。这款ALPHA开发板，是正点原子推出的第一款Linux开发板，采用底板+核心板的形式。"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://wiki.alientek.com/docs/Boards/Linux/IMX6U/I.MX6U 硬件参考手册/first_exploration"><link data-rh="true" rel="alternate" href="https://wiki.alientek.com/docs/Boards/Linux/IMX6U/I.MX6U 硬件参考手册/first_exploration" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://wiki.alientek.com/docs/Boards/Linux/IMX6U/I.MX6U 硬件参考手册/first_exploration" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.b043a271.css">
-<script src="/assets/js/runtime~main.3b2f9b65.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.dc01fd13.js" defer="defer"></script>
 <script src="/assets/js/main.805027e4.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -24,41 +24,41 @@
 <p>  I.MX6U-ALPHA开发板底板资源十分丰富，把I.MX6UL/ULL的内部资源发挥到了极致，基本所有I.MX6UL/ULL的内部资源都可以在此开发板上验证，同时扩充丰富的接口和功能模块，整个开发板显得十分大气。</p>
 <p>  开发板的外形尺寸为<code>100mm*180mm</code>大小，板子的设计充分考虑了人性化设计，并结合正点原子多年的开发板设计经验，经过多次改进，最终确定了这样的设计。</p>
 <p>  正点原子I.MX6U-ALPHA开发板底板板载资源如下：<br>
-◆	1个核心板接口，支持I.MX6UL/6ULL等核心板<br>
-◆	1个电源指示灯（蓝色）<br>
-◆	1个状态指示灯（红色）<br>
-◆	1个六轴（陀螺仪+加速度）传感器芯片，ICM20608<br>
-◆	1个高性能音频编解码芯片，WM8960<br>
-◆	1路CAN接口，采用TJA1050芯片<br>
-◆	1路485接口，采用SP3485芯片<br>
-◆	1路RS232串口（母）接口，采用SP3232芯片<br>
-◆	1个ATK模块接口，支持正点原子蓝牙/GPS/MPU6050/手势识别等模块<br>
-◆	1个光环境传感器（光照、距离、红外三合一）<br>
-◆	1个摄像头模块接口<br>
-◆	1个OLED模块接口<br>
-◆	1个USB串口，可用于代码调试<br>
-◆	1个USB SLAVE(OTG)接口，用于USB从机通信 <br>
-◆	1个有源蜂鸣器 <br>
-◆	1个RS232/RS485选择接口<br>
-◆	1个串口选择接口<br>
-◆	1个TF卡接口（在板子背面）<br>
-◆	2个10M/100M以太网接口（RJ45） <br>
-◆	1个录音头（MIC/咪头）<br>
-◆	1路立体声音频输出接口<br>
-◆	1路立体声录音输入接口<br>
-◆	1个小扬声器（在板子背面）<br>
-◆	2个扬声器外接接口，左右声道<br>
-◆	1组5V电源供应/接入口<br>
-◆	1组3.3V电源供应/接入口<br>
-◆	1个直流电源输入接口（输入电压范围：DC6~18V） <br>
-◆	1个启动模式选择配置接口<br>
-◆	1个RTC后备电池座，并带电池<br>
-◆	1个复位按钮，可用于复位MPU和LCD<br>
-◆	1个功能按钮<br>
-◆	1个电源开关，控制整个板的电源 <br>
-◆	1个Mini PCIE 4G模块接口<br>
-◆	1个Nano SIM卡接口<br>
-◆	1个SDIO WIFI接口<br></p>
+  ◆	1个核心板接口，支持I.MX6UL/6ULL等核心板<br>
+  ◆	1个电源指示灯（蓝色）<br>
+  ◆	1个状态指示灯（红色）<br>
+  ◆	1个六轴（陀螺仪+加速度）传感器芯片，ICM20608<br>
+  ◆	1个高性能音频编解码芯片，WM8960<br>
+  ◆	1路CAN接口，采用TJA1050芯片<br>
+  ◆	1路485接口，采用SP3485芯片<br>
+  ◆	1路RS232串口（母）接口，采用SP3232芯片<br>
+  ◆	1个ATK模块接口，支持正点原子蓝牙/GPS/MPU6050/手势识别等模块<br>
+  ◆	1个光环境传感器（光照、距离、红外三合一）<br>
+  ◆	1个摄像头模块接口<br>
+  ◆	1个OLED模块接口<br>
+  ◆	1个USB串口，可用于代码调试<br>
+  ◆	1个USB SLAVE(OTG)接口，用于USB从机通信 <br>
+  ◆	1个有源蜂鸣器 <br>
+  ◆	1个RS232/RS485选择接口<br>
+  ◆	1个串口选择接口<br>
+  ◆	1个TF卡接口（在板子背面）<br>
+  ◆	2个10M/100M以太网接口（RJ45） <br>
+  ◆	1个录音头（MIC/咪头）<br>
+  ◆	1路立体声音频输出接口<br>
+  ◆	1路立体声录音输入接口<br>
+  ◆	1个小扬声器（在板子背面）<br>
+  ◆	2个扬声器外接接口，左右声道<br>
+  ◆	1组5V电源供应/接入口<br>
+  ◆	1组3.3V电源供应/接入口<br>
+  ◆	1个直流电源输入接口（输入电压范围：DC6~18V） <br>
+  ◆	1个启动模式选择配置接口<br>
+  ◆	1个RTC后备电池座，并带电池<br>
+  ◆	1个复位按钮，可用于复位MPU和LCD<br>
+  ◆	1个功能按钮<br>
+  ◆	1个电源开关，控制整个板的电源 <br>
+  ◆	1个Mini PCIE 4G模块接口<br>
+  ◆	1个Nano SIM卡接口<br>
+  ◆	1个SDIO WIFI接口<br></p>
 <p>  正点原子I.MX6U-ALPHA开发板底板的特点包括：<br>
   1）、接口丰富。板子提供十来种标准接口，可以方便的进行各种外设的实验和开发。<br>
   2）、设计灵活。我们采用核心板+底板形式，板上很多资源都可以灵活配置，以满足不同条件下的使用；我们引出了105个IO口，极大的方便大家扩展及使用。 <br>
@@ -68,22 +68,22 @@
 <p>  接下来，我们来看I.MX6ULL核心板资源图，正点原子的I.MX6ULL核心板根据存储芯片的不同分为EMMC和NAND两种，根据对外提供的接口可以分为邮票孔和BTB两种。本教程主要使用与教学的，所以只会讲解BTB接口的核心板，BTB接口的NAND版本核心板如下图所示：</p>
 <center><p><img decoding="async" loading="lazy" alt="1.1.3" src="/assets/images/1.1.3-8c6217edd722ca830293e2f8a911decd.png" width="861" height="372" class="img_ev3q"><br>
 图1.1.2.1 V2.2版本以前I.MX6U-Mini开发板底板资源图</p></center>
-<p>    从上图可以看出，I.MX6ULL核心板板载资源丰富，可以满足各种应用的需求。整个核心板的外形尺寸为46mm*36mm大小，非常小巧，并且采用了贴片板对板连接器，使得其可以很方便的应用在各种项目上。I.MX6ULL NAND版核心板为工业级工作温度，可以应用在温度要求严格的场合。</p>
+<p>  从上图可以看出，I.MX6ULL核心板板载资源丰富，可以满足各种应用的需求。整个核心板的外形尺寸为46mm*36mm大小，非常小巧，并且采用了贴片板对板连接器，使得其可以很方便的应用在各种项目上。I.MX6ULL NAND版核心板为工业级工作温度，可以应用在温度要求严格的场合。</p>
 <p>  正点原子I.MX6ULL NAND版核心板板载资源如下：<br>
-◆	CPU：<code>MCIMX6Y2CVM05AB</code>(工业级)或<code>MCIMX6Y2CVM08AB</code>（工业级），主频分别为<strong>528MHz</strong>和<strong>800MHz</strong>(实际为792MHz)，BGA289<br>
-◆	外扩DDR3L：<code>NT5CC128M16JR-EK</code>，<strong>256MB</strong>字节，工业级<br>
-◆	NAND FLASH：<code>MT29F2G08ABAEAWP-IT</code>或 <code>MT29F4G08ABADAWP-IT</code>，分别为<strong>256MB/512MB</strong>字节，均为工业级<br>
-◆	两个<code>2*30</code>的防反插BTB座，共引出120 PIN 。<br></p>
+  ◆	CPU：<code>MCIMX6Y2CVM05AB</code>(工业级)或<code>MCIMX6Y2CVM08AB</code>（工业级），主频分别为<strong>528MHz</strong>和<strong>800MHz</strong>(实际为792MHz)，BGA289<br>
+  ◆	外扩DDR3L：<code>NT5CC128M16JR-EK</code>，<strong>256MB</strong>字节，工业级<br>
+  ◆	NAND FLASH：<code>MT29F2G08ABAEAWP-IT</code>或 <code>MT29F4G08ABADAWP-IT</code>，分别为<strong>256MB/512MB</strong>字节，均为工业级<br>
+  ◆	两个<code>2*30</code>的防反插BTB座，共引出120 PIN 。<br></p>
 <p>  BTB接口的EMMC版本核心板如下图所示：</p>
 <center><p><img decoding="async" loading="lazy" alt="1.1.4" src="/assets/images/1.1.4-f79e04a907eaaf1c1bc61cc1fdff5524.png" width="865" height="380" class="img_ev3q"><br>
 图1.1.3.1 I.MX6ULL NAND BTB接口核心板资源图</p></center>
 <p>  从上图可以看出，EMMC版本的核心和NAND版本的基本一样，不同之处在于将NAND换成了EMMC，将DDR3L换成了512MB的商业级。因此正点原子的EMMC核心板为商业级的工作温度范围，如需工业级的请联系定制。</p>
 <p>  正点原子I.MX6ULL EMMC版核心板板载资源如下：<br>
-◆	CPU：<code>MCIMX6Y2CVM08AB</code>（工业级），<strong>800MHz</strong>(实际792MHz)，BGA289<br>
-◆	外扩DDR3L：<code>NT5CC256M16EP-EK</code>，<strong>512MB</strong>字节，商业级。<br>
-◆	EMMC：<code>KLM8G1GET</code>，这是一个<strong>8GB</strong>的EMMC芯片。<br>
-◆	两个<code>2*30</code>的防反插BTB座，共引出<strong>120</strong> PIN<br></p>
-<p>  正点原子I.MX6ULL核心板的特点包括  ：<br>
+  ◆	CPU：<code>MCIMX6Y2CVM08AB</code>（工业级），<strong>800MHz</strong>(实际792MHz)，BGA289<br>
+  ◆	外扩DDR3L：<code>NT5CC256M16EP-EK</code>，<strong>512MB</strong>字节，商业级 。<br>
+  ◆	EMMC：<code>KLM8G1GET</code>，这是一个<strong>8GB</strong>的EMMC芯片。<br>
+  ◆	两个<code>2*30</code>的防反插BTB座，共引出<strong>120</strong> PIN<br></p>
+<p>  正点原子I.MX6ULL核心板的特点包括：<br>
   1）	体积小巧。核心板仅<code>46mm*36mm</code>大小，方便使用到各种项目里面。<br>
   2）	集成方便。核心板使用120P BTB连接座，可以非常方便的集成到客户PCB上，更换简单，方便维修测试。<br>
   3）	资源丰富。核心板板载：256MB/512MB DDR3L、可以选择NAND或EMMC等存储器，可以满足各种应用需求。<br>

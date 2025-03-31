@@ -34,3 +34,6 @@
 [submodule "docs/Boards/Linux/DLT113IS"]
 	path = docs/Boards/Linux/DLT113IS
 	url = https://github.com/openedv/openedv-wiki-boards-t113.git
+[submodule "docs/Boards/STM32/DNN647"]
+	path = docs/Boards/STM32/DNN647
+	url = https://github.com/openedv/openedv-wiki-boards-dnn647.git

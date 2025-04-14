@@ -37,3 +37,6 @@
 [submodule "docs/Boards/STM32/DNN647"]
 	path = docs/Boards/STM32/DNN647
 	url = https://github.com/openedv/openedv-wiki-boards-dnn647.git
+[submodule "docs/Boards/Linux/STM32MP257"]
+	path = docs/Boards/Linux/STM32MP257
+	url = https://github.com/openedv/openedv-wiki-boards-mp257.git

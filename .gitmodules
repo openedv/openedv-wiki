@@ -7,9 +7,6 @@
 [submodule "docs/Boards/Linux/DL2K0300"]
 	path = docs/Boards/Linux/DL2K0300
 	url = https://github.com/openedv/openedv-wiki-boards-dl2k0300b.git
-[submodule "docs/Boards/Minimum/DNRP2350AM"]
-	path = docs/Boards/Minimum/DNRP2350AM
-	url = https://github.com/openedv/openedv-wiki-boards-dnrp2350am.git
 [submodule "docs/Boards/Linux/DLIMX93"]
 	path = docs/Boards/Linux/DLIMX93
 	url = https://github.com/openedv/openedv-wiki-boards-imx93.git

@@ -3,10 +3,9 @@
 ## Step 1. 拉取最新文档
 
 ```bash
-git checkout main
-git pull
+git clone --recurse-submodules https://github.com/openedv/openedv-wiki.git
+cd openedv-wiki
 git submodule foreach 'git checkout main'
-git submodule foreach 'git pull'
 ```
 
 ## Step 2. 安装

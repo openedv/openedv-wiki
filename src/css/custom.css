@@ -13,6 +13,8 @@
 @import url('../../docs/Boards/Linux/DLT113IS/styles/custom.css');
 @import url('../../docs/Boards/Linux/STM32MP257/styles/custom.css');
 
+@import url('../../docs/Boards/RaspberryPi/DNRP2350A/styles/custom.css');
+
 @import url('../../docs/CardComputer/AtomPi-CA1/styles/custom.css');
 
 :root {

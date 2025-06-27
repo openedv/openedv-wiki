@@ -37,3 +37,6 @@
 [submodule "docs/Boards/Linux/STM32MP257"]
 	path = docs/Boards/Linux/STM32MP257
 	url = https://github.com/openedv/openedv-wiki-boards-mp257.git
+[submodule "docs/Boards/RaspberryPi/DNRP2350A"]
+	path = docs/Boards/RaspberryPi/DNRP2350A
+	url = https://github.com/openedv/openedv-wiki-boards-dnrp2350am.git

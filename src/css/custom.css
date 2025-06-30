@@ -2,16 +2,16 @@
 
 @import url('../../docs/Boards/Kendryte/DNK230D/styles/custom.css');
 
-@import url('../../docs/Boards/Linux/IMX6U/styles/custom.css');
-@import url('../../docs/Boards/Linux/DL2K0300/styles/custom.css');
-@import url('../../docs/Boards/Linux/DLIMX93/styles/custom.css');
-@import url('../../docs/Boards/Linux/CLRK3568F/styles/custom.css');
-@import url('../../docs/Boards/Linux/DLRK3588/styles/custom.css');
-@import url('../../docs/Boards/Linux/STM32MP157/styles/custom.css');
-@import url('../../docs/Boards/Linux/DLMP135/styles/custom.css');
-@import url('../../docs/Boards/Linux/DLAM62x/styles/custom.css');
-@import url('../../docs/Boards/Linux/DLT113IS/styles/custom.css');
-@import url('../../docs/Boards/Linux/STM32MP257/styles/custom.css');
+/* @import url('../../docs/Boards/Linux/IMX6U/styles/custom.css'); */
+/* @import url('../../docs/Boards/Linux/DL2K0300/styles/custom.css'); */
+/* @import url('../../docs/Boards/Linux/DLIMX93/styles/custom.css'); */
+/* @import url('../../docs/Boards/Linux/CLRK3568F/styles/custom.css'); */
+/* @import url('../../docs/Boards/Linux/DLRK3588/styles/custom.css'); */
+/* @import url('../../docs/Boards/Linux/STM32MP157/styles/custom.css'); */
+/* @import url('../../docs/Boards/Linux/DLMP135/styles/custom.css'); */
+/* @import url('../../docs/Boards/Linux/DLAM62x/styles/custom.css'); */
+/* @import url('../../docs/Boards/Linux/DLT113IS/styles/custom.css'); */
+/* @import url('../../docs/Boards/Linux/STM32MP257/styles/custom.css'); */
 
 @import url('../../docs/Boards/RaspberryPi/DNRP2350A/styles/custom.css');
 

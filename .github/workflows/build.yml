@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Print trigger source
-        if: ${{ github.event.client_payload.name != null }}
-        run: echo "Build trigger from ${{ github.event.client_payload.name }}"
+        if: ${{ github.event.client_payload.repo_name != null }}
+        run: echo "Build trigger from ${{ github.event.client_payload.repo_name }}"
 
       - uses: actions/checkout@v4
         with:

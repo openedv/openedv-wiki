@@ -14,6 +14,10 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
+      - name: Print trigger source
+        if: ${{ !github.event.client_payload.name }}
+        run: echo "Build trigger from ${{ github.event.client_payload.name }}"
+
       - uses: actions/checkout@v4
         with:
           ref: main
@@ -22,7 +26,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      
+
       - name: Checkout submodules to main branch
         run: |
           git submodule foreach 'git checkout main'

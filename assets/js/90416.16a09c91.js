@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkopenedv_wiki=self.webpackChunkopenedv_wiki||[]).push([[90416],{90416:(e,k,i)=>{i.r(k)}}]);

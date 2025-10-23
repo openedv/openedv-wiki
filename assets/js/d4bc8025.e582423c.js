@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkopenedv_wiki=self.webpackChunkopenedv_wiki||[]).push([[1173],{81410:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"K230D BOX","slug":"/category/k230d-box-2","permalink":"/docs/category/k230d-box-2","sidebar":"BoardsKendryteSidebar","navigation":{"next":{"title":"\u76ee\u5f55","permalink":"/docs/Boards/Kendryte/DNK230D/TOC"}}}}')}}]);

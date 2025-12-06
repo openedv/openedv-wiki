@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkopenedv_wiki=globalThis.webpackChunkopenedv_wiki||[]).push([[52634],{30192:(e,i,n)=>{n.r(i),n.d(i,{default:()=>d});var o=n(56347),a=n(74848);function d(){return(0,a.jsx)(o.rd,{to:"/docs/homepage/index.html"})}}}]);

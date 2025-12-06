@@ -40,3 +40,6 @@
 [submodule "docs/Boards/RaspberryPi/DNRP2350A"]
 	path = docs/Boards/RaspberryPi/DNRP2350A
 	url = https://github.com/openedv/openedv-wiki-boards-dnrp2350am.git
+[submodule "docs/Boards/IoT/DNT5M"]
+	path = docs/Boards/IoT/DNT5M
+	url = https://github.com/openedv/openedv-wiki-boards-dnt5m.git

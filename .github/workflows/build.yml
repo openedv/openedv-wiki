@@ -26,17 +26,18 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
-      - name: Checkout submodules to main branch
+      - name: Update submodules
         run: |
-          git submodule foreach 'git checkout main'
-          git submodule foreach 'git pull'
+          git submodule sync --recursive
+          git submodule update --init --recursive --remote
         
       - name: Install dependencies
-        run: yarn
+        run: npm install
 
       - name: Build website
-        run: yarn build
+        run: npm run build
 
       - name: Publish to branch
         uses: peaceiris/actions-gh-pages@v4

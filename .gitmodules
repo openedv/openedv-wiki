@@ -43,3 +43,6 @@
 [submodule "docs/Boards/IoT/DNT5M"]
 	path = docs/Boards/IoT/DNT5M
 	url = https://github.com/openedv/openedv-wiki-boards-dnt5m.git
+[submodule "docs/Boards/IoT/DNESP32S3B3"]
+	path = docs/Boards/IoT/DNESP32S3B3
+	url = https://github.com/openedv/openedv-wiki-boards-dnesp32s3b3.git

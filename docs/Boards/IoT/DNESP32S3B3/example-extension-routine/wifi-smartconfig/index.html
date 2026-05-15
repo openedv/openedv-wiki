@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">WIFI一键配网实验 | 正点原子在线文档</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://wiki.alientek.com/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://wiki.alientek.com/img/social-card.jpg"><meta data-rh="true" property="og:url" content="https://wiki.alientek.com/docs/Boards/IoT/DNESP32S3B3/example-extension-routine/wifi-smartconfig"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="WIFI一键配网实验 | 正点原子在线文档"><meta data-rh="true" name="description" content="WIFI SMARTCONFIG"><meta data-rh="true" property="og:description" content="WIFI SMARTCONFIG"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://wiki.alientek.com/docs/Boards/IoT/DNESP32S3B3/example-extension-routine/wifi-smartconfig"><link data-rh="true" rel="alternate" href="https://wiki.alientek.com/docs/Boards/IoT/DNESP32S3B3/example-extension-routine/wifi-smartconfig" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://wiki.alientek.com/docs/Boards/IoT/DNESP32S3B3/example-extension-routine/wifi-smartconfig" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.befeb1dc.css">
-<script src="/assets/js/runtime~main.85266c20.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.2b55f63f.js" defer="defer"></script>
 <script src="/assets/js/main.8d9760b3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -25,7 +25,7 @@
 <li>硬件设计</li>
 </ol>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>例程功能与硬件资源</div><div class="admonitionContent_BuS1"><p>本章实验功能简介：设备进入初始化状态，开启混监听所有网络数据包，此时 LCD显示&quot;Inthe distribution network......&quot;，表示设备已进入混监听模式。手机连上自己的 WiFi，开启 APP（EspTouch）软件，输入手机所在 WiFi 密码，请求配网，发送 UDP 广播包。 ESP32 -S3 通过 UDP 包（长度）获取配置信息捕捉到路由 SSID 和 PASSWD，连接路由器,此时 LCD 显示路由的账号与密码，表示连接路由成功。
-<br>1，LED(RED) - IO4
+<br>1，LED(RED) - IO1_1
 <br>2，正点原子 2.4 寸LCD屏幕
 <br>3，ESP32-S3 内部 WiFi</p></div></div>
 <p>3.原理图</p>
@@ -33,7 +33,7 @@
 <ol start="4">
 <li>软件设计</li>
 </ol>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span> 软件设计</div><div class="admonitionContent_BuS1"><p>程序启动后初始化NVS、lwIP和事件组，配置STA模式WiFi。通过事件回调判断连接状态，执行配网任务或重新连接，成功则输出信息，失败则显示未配网提示。</p></div></div>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>软件设计</div><div class="admonitionContent_BuS1"><p>程序启动后初始化NVS、lwIP和事件组，配置STA模式WiFi。通过事件回调判断连接状态，执行配网任务或重新连接，成功则输出信息，失败则显示未配网提示。</p></div></div>
 <ol start="5">
 <li>将对应接口的电源线接入 DNESP32S3 BOX3 开发板底板的 USB Type-C 接口，为其进行供电。</li>
 </ol>
